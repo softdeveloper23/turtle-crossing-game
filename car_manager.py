@@ -14,3 +14,7 @@ class CarManager(Turtle):
         self.color(random.choice(COLORS))
         self.penup()
         self.goto(0, 0)
+
+    def move(self):
+        self.speed(1)
+        self.backward(MOVE_INCREMENT)
