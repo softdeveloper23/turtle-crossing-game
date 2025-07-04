@@ -10,6 +10,8 @@ screen.tracer(0)
 screen.bgcolor("black")
 
 player = Player()
+car = CarManager()
+
 screen.listen()
 screen.onkey(player.move, "Up")
 
