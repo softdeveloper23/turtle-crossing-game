@@ -30,10 +30,10 @@ while game_is_on:
             scoreboard.game_over()
             game_is_on = False
 
-    if player.ycor() >= 300:
-        player.goto(0, -280)
-        scoreboard.level_up()
+    if player.is_at_finish_line():
+        player.go_to_start()
         car_manager.level_up()  
+        scoreboard.level_up()
 
 screen.exitonclick()
 
