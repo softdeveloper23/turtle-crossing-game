@@ -12,9 +12,8 @@ class CarManager:
         self.car_speed = STARTING_MOVE_DISTANCE
 
     def create_car(self):
-        # Only create a car occasionally (not every frame)
         random_chance = random.randint(1, 6)
-        if random_chance == 1:  # 1 in 6 chance each frame
+        if random_chance == 1:  
             new_car = Turtle("square")
             new_car.penup()
             new_car.color(random.choice(COLORS))
